@@ -1,0 +1,22 @@
+:root {
+    --xwidth: (90- 5)%
+  }
+
+
+@media only screen and (max-width: 480px) {
+    .medium {display: none;}
+    .large {display: none;}
+    body {background-color: red; font-size: 16; max-width:var(--xwidth); margin: auto; word-wrap: break-word;}
+}
+
+@media only screen and (min-width: 480px) and (max-width:1024px) {
+    .small {display: none;}
+    .large {display: none;} 
+    body {background-color: green; font-size: 20; max-width:66%; margin: auto; word-wrap: break-word;}
+}
+
+@media only screen and (min-width: 1024px) {
+    .medium {display: none;}
+    .small {display: none;}
+    body {background-color: blue; font-size: 24; max-width:33%; margin: auto; word-wrap: break-word;}
+}
